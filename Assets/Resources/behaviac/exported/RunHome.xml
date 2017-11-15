@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--EXPORTED BY TOOL, DON'T MODIFY IT!-->
+<!--Source File: RunHome.xml-->
+<behavior name="RunHome" agenttype="HeroAgent" version="5">
+  <node class="SelectorLoop" id="0">
+    <property ResetChildren="false" />
+    <node class="WithPrecondition" id="1">
+      <node class="And" id="3">
+        <node class="Condition" id="5">
+          <property Operator="Greater" />
+          <property Opl="Self.HeroAgent::GetDistanceFromHome()" />
+          <property Opr="const float 70" />
+        </node>
+        <node class="Condition" id="6">
+          <property Operator="Equal" />
+          <property Opl="Self.HeroAgent::HasEnemyInEyeRange()" />
+          <property Opr="const bool false" />
+        </node>
+        <node class="Condition" id="7">
+          <property Operator="Equal" />
+          <property Opl="Self.HeroAgent::HasReturnHomeSkill()" />
+          <property Opr="const bool true" />
+        </node>
+      </node>
+      <node class="Action" id="4">
+        <property Method="Self.HeroAgent::SkillReturnHome()" />
+        <property ResultOption="BT_INVALID" />
+      </node>
+    </node>
+    <node class="WithPrecondition" id="2">
+      <node class="And" id="8">
+        <node class="Condition" id="9">
+          <property Operator="Equal" />
+          <property Opl="bool Self.FightAgent::couldMove" />
+          <property Opr="const bool true" />
+        </node>
+        <node class="Condition" id="10">
+          <property Operator="Equal" />
+          <property Opl="Self.HeroAgent::HasReturnHomeSkill()" />
+          <property Opr="const bool false" />
+        </node>
+      </node>
+      <node class="Action" id="11">
+        <property Method="Self.SoilderAgent::MoveTo(bVector3 Self.SoilderAgent::homePoint)" />
+        <property ResultOption="BT_INVALID" />
+      </node>
+    </node>
+  </node>
+</behavior>

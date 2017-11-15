@@ -1,0 +1,7 @@
+login/prefabs/ui loginpanel.prefab
+login/prefabs/ui registerpanel.prefab
+login/textures button_blue.png
+login/textures button_red.png
+login/textures login_bkg 1.png
+login/textures login_frame_bkg.png
+login/textures rog_logo.png

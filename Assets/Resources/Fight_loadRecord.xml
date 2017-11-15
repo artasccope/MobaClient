@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <LoadItem PrefabABPath="fight/building.ld SectionB.prefab" OrganizeDataABPath="fight/organizedata/building.ld SectionB.asset" InitialOrder="0" IsActive="true" />
+  <LoadItem PrefabABPath="fight/building.ld Terrain.prefab" OrganizeDataABPath="fight/organizedata/building.ld Terrain.asset" InitialOrder="1" IsActive="true" />
+  <LoadItem PrefabABPath="fight/building.ld SectionA.prefab" OrganizeDataABPath="fight/organizedata/building.ld SectionA.asset" InitialOrder="2" IsActive="true" />
+  <LoadItem PrefabABPath="fight/building.ld RailWay.prefab" OrganizeDataABPath="fight/organizedata/building.ld RailWay.asset" InitialOrder="3" IsActive="true" />
+  <LoadItem PrefabABPath="fight/ui.ld BottomLeft.prefab" OrganizeDataABPath="fight/organizedata/ui.ld BottomLeft.asset" InitialOrder="4" IsActive="true" />
+  <LoadItem PrefabABPath="fight/ui.ld BottomRight.prefab" OrganizeDataABPath="fight/organizedata/ui.ld BottomRight.asset" InitialOrder="5" IsActive="true" />
+  <LoadItem PrefabABPath="fight/ui.ld errorPanel.prefab" OrganizeDataABPath="fight/organizedata/ui.ld errorPanel.asset" InitialOrder="6" IsActive="false" />
+  <LoadItem PrefabABPath="fight/ui.ld headInfo.prefab" OrganizeDataABPath="fight/organizedata/ui.ld headInfo.asset" InitialOrder="7" IsActive="true" />
+  <LoadItem PrefabABPath="fight/ui.ld MiniMapFrame.prefab" OrganizeDataABPath="fight/organizedata/ui.ld MiniMapFrame.asset" InitialOrder="8" IsActive="true" />
+  <LoadItem PrefabABPath="fight/ui.ld settingsPanel.prefab" OrganizeDataABPath="fight/organizedata/ui.ld settingsPanel.asset" InitialOrder="9" IsActive="false" />
+  <LoadItem PrefabABPath="fight/ui.ld TopRight.prefab" OrganizeDataABPath="fight/organizedata/ui.ld TopRight.asset" InitialOrder="10" IsActive="true" />
+</root>

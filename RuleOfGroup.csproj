@@ -1,0 +1,551 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{52991FD1-9A34-8F7C-313D-DBE0ABFF365D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityVersion>5.6.3f1</UnityVersion>
+    <RootNamespace>
+    </RootNamespace>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_3;UNITY_5_6;UNITY_5;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_5_6_3;UNITY_5_6;UNITY_5;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_RUNTIME_NAVMESH_BUILDING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;ENABLE_VIDEO;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TestRunner">
+      <HintPath>Library\UnityAssemblies\UnityEngine.TestRunner.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>Library\UnityAssemblies\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Analytics">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HoloLens">
+      <HintPath>Library\UnityAssemblies\UnityEngine.HoloLens.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="CString">
+      <HintPath>Assets\Plugins\CString.dll</HintPath>
+    </Reference>
+    <Reference Include="Debugger">
+      <HintPath>Assets\Plugins\Debugger.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>Assets\Plugins\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="CommonTools">
+      <HintPath>Assets\Plugins\GameFW\CommonTools.dll</HintPath>
+    </Reference>
+    <Reference Include="GameFW.AOI">
+      <HintPath>Assets\Plugins\GameFW\GameFW.AOI.dll</HintPath>
+    </Reference>
+    <Reference Include="GameFW.Nav">
+      <HintPath>Assets\Plugins\GameFW\GameFW.Nav.dll</HintPath>
+    </Reference>
+    <Reference Include="GameFW.Net">
+      <HintPath>Assets\Plugins\GameFW\GameFW.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="GameFW.Utility">
+      <HintPath>Assets\Plugins\GameFW\GameFW.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Protocol">
+      <HintPath>Assets\Plugins\GameFW\Protocol.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Lua\NewBehaviourScript.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Components\DragComponent.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Core\HUDNode.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Core\HUDWidget.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Core\NodeType.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Extensions\ColorExt.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Extensions\ListExtPF.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\HUDDelegate.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Nodes\Root\ConsoleNode.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Nodes\Root\FpsNode.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Nodes\Root\HeapNode.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Nodes\Root\MemoryNode.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Nodes\Root\OrientationNode.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Nodes\Root\ScreenInfoNode.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Sample\MainMock.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Widgets\Console\ConsoleItem.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Widgets\Console\ConsoleItemView.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Widgets\Console\EConsoleType.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Widgets\ConsoleWidget.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Widgets\FpsWidget.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Widgets\HeapWidget.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Widgets\MemoryWidget.cs" />
+    <Compile Include="Assets\PlayFlock_Utils\HUDDebug\Widgets\ScreenInfoWidget.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Asset\AssetBase.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Asset\AssetEventEnum.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Asset\Load\LoadItemData.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Asset\Load\ResLoader.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Asset\Load\SceneLoader.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Asset\Mgr\AssetMgr.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Asset\Mgr\Basic\ABResLoader.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Asset\Mgr\Basic\IUnload.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Asset\Mgr\Basic\LoadMgr.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Asset\Mgr\Basic\ManifestLoader.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Asset\Mgr\Basic\SingleABLoader.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Audio\AudioMgr.cs" />
+    <Compile Include="Assets\Scripts\GameFW\ClientUtility\UnityDebugger.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Base\IGetObj.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Base\IMessageProcess.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Base\Mgr.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Base\MgrCenter.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Base\ModuleBase.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\MgrCenterLoader.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Msg\MsgAccount.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Msg\MsgAssetLoadRequest.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Msg\MsgAssetLoaded.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Msg\MsgAtkRequest.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Msg\MsgBase.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Msg\MsgBuildingCreate.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Msg\MsgBundleLoadProgress.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Msg\MsgDelayAndFloating.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Msg\MsgEntityPos.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Msg\MsgHUD.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Msg\MsgInt.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Msg\MsgIntArr.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Msg\MsgKV.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Msg\MsgMoveRequest.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Msg\MsgNPCCreate.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Msg\MsgPosSync.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Msg\MsgSelectDTO.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Msg\MsgSelectRoom.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Msg\MsgString.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Msg\MsgT.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Msg\MsgTransform.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Msg\MsgUnloadAssetBundles.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Msg\MsgUserDTO.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Msg\Msgs.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\MsgType.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Core\Settings.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Entity\BattleFieldAOI.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Entity\Command.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Entity\Driver\DefenseTowerDriver.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Entity\Driver\FightDriver.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Entity\Skill\ISkill.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Entity\Skill\ISkillComponent.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Entity\Skill\ISkillEffect.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Entity\Driver\SoilderDriver.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Entity\EntityEnum.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Entity\EntityLoader.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Entity\EntityMgr.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Entity\EntityRegister.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Entity\Helper\MoveHelper.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Entity\Logic\BuildingLogic.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Entity\Logic\CreatureMgr.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Entity\Logic\EntityLogic.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Entity\PosSyncDriver.cs" />
+    <Compile Include="Assets\Scripts\GameFW\GameMgr\AttackTree\AtkNode.cs" />
+    <Compile Include="Assets\Scripts\GameFW\GameMgr\AttackTree\AtkTree.cs" />
+    <Compile Include="Assets\Scripts\GameFW\GameMgr\AttackTree\AtkTreeLoader.cs" />
+    <Compile Include="Assets\Scripts\GameFW\GameMgr\GameMgr.cs" />
+    <Compile Include="Assets\Scripts\GameFW\GameMgr\GameRuntimeData.cs" />
+    <Compile Include="Assets\Scripts\GameFW\GameMgr\IGameMgr.cs" />
+    <Compile Include="Assets\Scripts\GameFW\GameMgr\IIncidentMgr.cs" />
+    <Compile Include="Assets\Scripts\GameFW\GameMgr\IncidentMgr.cs" />
+    <Compile Include="Assets\Scripts\GameFW\ID\IDCaculater.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Input\InputMgr.cs" />
+    <Compile Include="Assets\Scripts\GameFW\NetClient\Fight\FightHandler.cs" />
+    <Compile Include="Assets\Scripts\GameFW\NetClient\IHandler.cs" />
+    <Compile Include="Assets\Scripts\GameFW\NetClient\Login\LoginHandler.cs" />
+    <Compile Include="Assets\Scripts\GameFW\NetClient\Match\MatchHandler.cs" />
+    <Compile Include="Assets\Scripts\GameFW\NetClient\Mgr\NetMgr.cs" />
+    <Compile Include="Assets\Scripts\GameFW\NetClient\NetBase.cs" />
+    <Compile Include="Assets\Scripts\GameFW\NetClient\NetCONClient.cs" />
+    <Compile Include="Assets\Scripts\GameFW\NetClient\NetEventEnum.cs" />
+    <Compile Include="Assets\Scripts\GameFW\NetClient\NetMsgCenter.cs" />
+    <Compile Include="Assets\Scripts\GameFW\NetClient\Select\SelectHandler.cs" />
+    <Compile Include="Assets\Scripts\GameFW\NetClient\Time\TimeHandler.cs" />
+    <Compile Include="Assets\Scripts\GameFW\NetClient\User\UserHandler.cs" />
+    <Compile Include="Assets\Scripts\GameFW\OrganizeData\Entity\EntityConfig.cs" />
+    <Compile Include="Assets\Scripts\GameFW\OrganizeData\Entity\EntityInfo.cs" />
+    <Compile Include="Assets\Scripts\GameFW\OrganizeData\Entity\EntitySaveOption.cs" />
+    <Compile Include="Assets\Scripts\GameFW\OrganizeData\UI\UIWidgetConfig.cs" />
+    <Compile Include="Assets\Scripts\GameFW\OrganizeData\UI\UIWidgetInfo.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Persistence\IPersistence.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Persistence\LayerIds.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Persistence\Persistence.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Player\AutoAI.cs" />
+    <Compile Include="Assets\Scripts\GameFW\UI\ErrorUI.cs" />
+    <Compile Include="Assets\Scripts\GameFW\UI\Fight\HUD\EntityHUD.cs" />
+    <Compile Include="Assets\Scripts\GameFW\UI\Fight\HUD\HUDContainer.cs" />
+    <Compile Include="Assets\Scripts\GameFW\UI\Fight\HUD\HUDInfo.cs" />
+    <Compile Include="Assets\Scripts\GameFW\UI\Fight\JoyStick.cs" />
+    <Compile Include="Assets\Scripts\GameFW\UI\Login\LoginUI.cs" />
+    <Compile Include="Assets\Scripts\GameFW\UI\Login\RegisterUI.cs" />
+    <Compile Include="Assets\Scripts\GameFW\UI\Select\HeroGrid.cs" />
+    <Compile Include="Assets\Scripts\GameFW\UI\Select\HeroSelectGridBox.cs" />
+    <Compile Include="Assets\Scripts\GameFW\UI\Select\SelectPlayerInfoGrid.cs" />
+    <Compile Include="Assets\Scripts\GameFW\UI\Select\SelectPlayerInfoList.cs" />
+    <Compile Include="Assets\Scripts\GameFW\UI\Select\SelectUI.cs" />
+    <Compile Include="Assets\Scripts\GameFW\UI\UIBase.cs" />
+    <Compile Include="Assets\Scripts\GameFW\UI\UIEnum.cs" />
+    <Compile Include="Assets\Scripts\GameFW\UI\UIRegister.cs" />
+    <Compile Include="Assets\Scripts\GameFW\UI\UIWidgetNames.cs" />
+    <Compile Include="Assets\Scripts\GameFW\UI\User\UserUI.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Ultility\CoroutineObjs.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Ultility\FileTool.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Ultility\NameTool.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Ultility\PathTool.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Ultility\RendererExtensions.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Ultility\SkipList.cs" />
+    <Compile Include="Assets\Scripts\GameFW\Ultility\SkipListNode.cs" />
+    <Compile Include="Assets\Scripts\Lua\LuaUIBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Test\AOITester.cs" />
+    <Compile Include="Assets\Scripts\Test\ASTest.cs" />
+    <Compile Include="Assets\Scripts\Test\DateTimeTest.cs" />
+    <Compile Include="Assets\Scripts\Test\DefenseTowerTester.cs" />
+    <Compile Include="Assets\Scripts\Test\EntityControl.cs" />
+    <Compile Include="Assets\Scripts\Test\LambdaGCTest.cs" />
+    <Compile Include="Assets\Scripts\Test\LoadSceneTest.cs" />
+    <Compile Include="Assets\Scripts\Test\MgrLoaderTest.cs" />
+    <Compile Include="Assets\Scripts\Test\NullTester.cs" />
+    <Compile Include="Assets\Scripts\Test\RefTest.cs" />
+    <Compile Include="Assets\Scripts\Test\ReflectionTest.cs" />
+    <Compile Include="Assets\Scripts\Test\TimeTest.cs" />
+    <Compile Include="Assets\Scripts\Test\UnityAPISequenceTest.cs" />
+    <Compile Include="Assets\Scripts\behaviac\behaviac_generated\types\AgentProperties.cs" />
+    <Compile Include="Assets\Scripts\behaviac\behaviac_generated\types\BuildingAgent.cs" />
+    <Compile Include="Assets\Scripts\behaviac\behaviac_generated\types\DefenseTowerAgent.cs" />
+    <Compile Include="Assets\Scripts\behaviac\behaviac_generated\types\FightAgent.cs" />
+    <Compile Include="Assets\Scripts\behaviac\behaviac_generated\types\HeroAgent.cs" />
+    <Compile Include="Assets\Scripts\behaviac\behaviac_generated\types\SoilderAgent.cs" />
+    <Compile Include="Assets\Scripts\behaviac\behaviac_generated\types\customizedtypes.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\Agent\Agent.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\Agent\Context.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\Base\Attributs.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\Base\CRC32.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\Base\FileManager.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\Base\LogManager.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\Base\Member.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\Base\Meta.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\Base\MiniXml.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\Base\Operation.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\Base\Properties.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\Base\RandomGenerator.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\Base\Utils.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\Base\socketconnect.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\Base\socketconnect_base.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Attachments\AttachAction.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Attachments\Effector.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Attachments\Event.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Attachments\Precondition.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\BehaviorTree.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\BehaviorTree_task.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Actions\Action.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Actions\Assignment.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Actions\Compute.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Actions\End.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Actions\Noop.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Actions\Wait.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Actions\Waitforsignal.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Actions\Waitframes.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Composites\Compositestochastic.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Composites\Ifelse.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Composites\Parallel.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Composites\Referencebehavior.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Composites\Selector.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Composites\Selectorloop.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Composites\Selectorprobability.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Composites\Selectorstochastic.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Composites\Sequence.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Composites\Sequencestochastic.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Composites\Withprecondition.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Conditions\And.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Conditions\Condition.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Conditions\Conditionbase.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Conditions\False.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Conditions\Or.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Conditions\True.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Decorators\DecoratorIterator.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Decorators\Decoratoralwaysfailure.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Decorators\Decoratoralwaysrunning.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Decorators\Decoratoralwayssuccess.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Decorators\Decoratorcount.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Decorators\Decoratorcountlimit.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Decorators\Decoratorfailureuntil.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Decorators\Decoratorframes.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Decorators\Decoratorlog.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Decorators\Decoratorloop.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Decorators\Decoratorloopuntil.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Decorators\Decoratornot.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Decorators\Decoratorrepeat.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Decorators\Decoratorsuccessuntil.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Decorators\Decoratortime.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\BehaviorTree\Nodes\Decorators\Decoratorweight.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\FSM\AlwaysTransition.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\FSM\FSM.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\FSM\StartCondition.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\FSM\State.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\FSM\TransitionCondition.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\FSM\WaitState.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\FSM\WaitTransition.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\FSM\WaitframesState.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\HTN\AgentState.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\HTN\Method.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\HTN\Planner.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\HTN\PlannerTask.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\HTN\Task.cs" />
+    <Compile Include="Assets\Scripts\behaviac\runtime\Workspace.cs" />
+    <Compile Include="Assets\Source\Generate\DelegateFactory.cs" />
+    <Compile Include="Assets\Source\Generate\LuaBinder.cs" />
+    <Compile Include="Assets\Source\Generate\LuaInterface_DebuggerWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_AnimationBlendModeWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_AnimationClipWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_AnimationStateWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_AnimationWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_AnimatorWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_ApplicationWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_AssetBundleWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_AsyncOperationWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_AudioClipWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_AudioSourceWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_BehaviourWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_BlendWeightsWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_BoxColliderWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_CameraClearFlagsWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_CameraWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_CapsuleColliderWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_CharacterControllerWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_ColliderWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_ComponentWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_GameObjectWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_InputWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_KeyCodeWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_LightTypeWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_LightWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_MaterialWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_MeshColliderWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_MeshRendererWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_MonoBehaviourWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_ParticleSystemWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_PhysicsWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_PlayModeWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_QualitySettingsWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_QueueModeWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_RenderSettingsWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_RenderTextureWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_RendererWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_ResourcesWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_RigidbodyWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_ScreenWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_ShaderWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_SkinnedMeshRendererWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_SleepTimeoutWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_SpaceWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_SphereColliderWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_Texture2DWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_TextureWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_TimeWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_TrackedReferenceWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_TransformWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_WWWWrap.cs" />
+    <Compile Include="Assets\Source\Generate\UnityEngine_WrapModeWrap.cs" />
+    <Compile Include="Assets\Source\LuaConst.cs" />
+    <Compile Include="Assets\ToLua\BaseType\LuaInterface_EventObjectWrap.cs" />
+    <Compile Include="Assets\ToLua\BaseType\LuaInterface_LuaConstructorWrap.cs" />
+    <Compile Include="Assets\ToLua\BaseType\LuaInterface_LuaFieldWrap.cs" />
+    <Compile Include="Assets\ToLua\BaseType\LuaInterface_LuaMethodWrap.cs" />
+    <Compile Include="Assets\ToLua\BaseType\LuaInterface_LuaOutWrap.cs" />
+    <Compile Include="Assets\ToLua\BaseType\LuaInterface_LuaPropertyWrap.cs" />
+    <Compile Include="Assets\ToLua\BaseType\System_ArrayWrap.cs" />
+    <Compile Include="Assets\ToLua\BaseType\System_Collections_Generic_DictionaryWrap.cs" />
+    <Compile Include="Assets\ToLua\BaseType\System_Collections_Generic_Dictionary_KeyCollectionWrap.cs" />
+    <Compile Include="Assets\ToLua\BaseType\System_Collections_Generic_Dictionary_ValueCollectionWrap.cs" />
+    <Compile Include="Assets\ToLua\BaseType\System_Collections_Generic_KeyValuePairWrap.cs" />
+    <Compile Include="Assets\ToLua\BaseType\System_Collections_Generic_ListWrap.cs" />
+    <Compile Include="Assets\ToLua\BaseType\System_Collections_IEnumeratorWrap.cs" />
+    <Compile Include="Assets\ToLua\BaseType\System_Collections_ObjectModel_ReadOnlyCollectionWrap.cs" />
+    <Compile Include="Assets\ToLua\BaseType\System_DelegateWrap.cs" />
+    <Compile Include="Assets\ToLua\BaseType\System_EnumWrap.cs" />
+    <Compile Include="Assets\ToLua\BaseType\System_NullObjectWrap.cs" />
+    <Compile Include="Assets\ToLua\BaseType\System_ObjectWrap.cs" />
+    <Compile Include="Assets\ToLua\BaseType\System_StringWrap.cs" />
+    <Compile Include="Assets\ToLua\BaseType\System_TypeWrap.cs" />
+    <Compile Include="Assets\ToLua\BaseType\UnityEngine_CoroutineWrap.cs" />
+    <Compile Include="Assets\ToLua\BaseType\UnityEngine_ObjectWrap.cs" />
+    <Compile Include="Assets\ToLua\Core\LuaAttributes.cs" />
+    <Compile Include="Assets\ToLua\Core\LuaBaseRef.cs" />
+    <Compile Include="Assets\ToLua\Core\LuaBeatEvent.cs" />
+    <Compile Include="Assets\ToLua\Core\LuaDLL.cs" />
+    <Compile Include="Assets\ToLua\Core\LuaEvent.cs" />
+    <Compile Include="Assets\ToLua\Core\LuaException.cs" />
+    <Compile Include="Assets\ToLua\Core\LuaFileUtils.cs" />
+    <Compile Include="Assets\ToLua\Core\LuaFunction.cs" />
+    <Compile Include="Assets\ToLua\Core\LuaMatchType.cs" />
+    <Compile Include="Assets\ToLua\Core\LuaMethodCache.cs" />
+    <Compile Include="Assets\ToLua\Core\LuaMisc.cs" />
+    <Compile Include="Assets\ToLua\Core\LuaStackOp.cs" />
+    <Compile Include="Assets\ToLua\Core\LuaState.cs" />
+    <Compile Include="Assets\ToLua\Core\LuaStatePtr.cs" />
+    <Compile Include="Assets\ToLua\Core\LuaStatic.cs" />
+    <Compile Include="Assets\ToLua\Core\LuaTable.cs" />
+    <Compile Include="Assets\ToLua\Core\LuaThread.cs" />
+    <Compile Include="Assets\ToLua\Core\LuaUnityLibs.cs" />
+    <Compile Include="Assets\ToLua\Core\LuaValueType.cs" />
+    <Compile Include="Assets\ToLua\Core\ObjectPool.cs" />
+    <Compile Include="Assets\ToLua\Core\ObjectTranslator.cs" />
+    <Compile Include="Assets\ToLua\Core\ToLua.cs" />
+    <Compile Include="Assets\ToLua\Core\TypeChecker.cs" />
+    <Compile Include="Assets\ToLua\Core\TypeTraits.cs" />
+    <Compile Include="Assets\ToLua\Examples\01_HelloWorld\HelloWorld.cs" />
+    <Compile Include="Assets\ToLua\Examples\02_ScriptsFromFile\ScriptsFromFile.cs" />
+    <Compile Include="Assets\ToLua\Examples\03_CallLuaFunction\CallLuaFunction.cs" />
+    <Compile Include="Assets\ToLua\Examples\04_AccessingLuaVariables\AccessingLuaVariables.cs" />
+    <Compile Include="Assets\ToLua\Examples\05_LuaCoroutine\TestCoroutine.cs" />
+    <Compile Include="Assets\ToLua\Examples\06_LuaCoroutine2\TestCoroutine2.cs" />
+    <Compile Include="Assets\ToLua\Examples\07_LuaThread\TestLuaThread.cs" />
+    <Compile Include="Assets\ToLua\Examples\08_AccessingArray\AccessingArray.cs" />
+    <Compile Include="Assets\ToLua\Examples\09_Dictionary\System_Collections_Generic_Dictionary_int_TestAccountWrap.cs" />
+    <Compile Include="Assets\ToLua\Examples\09_Dictionary\System_Collections_Generic_Dictionary_int_TestAccount_KeyCollectionWrap.cs" />
+    <Compile Include="Assets\ToLua\Examples\09_Dictionary\System_Collections_Generic_Dictionary_int_TestAccount_ValueCollectionWrap.cs" />
+    <Compile Include="Assets\ToLua\Examples\09_Dictionary\System_Collections_Generic_KeyValuePair_int_TestAccountWrap.cs" />
+    <Compile Include="Assets\ToLua\Examples\09_Dictionary\TestAccountWrap.cs" />
+    <Compile Include="Assets\ToLua\Examples\09_Dictionary\UseDictionary.cs" />
+    <Compile Include="Assets\ToLua\Examples\10_Enum\AccessingEnum.cs" />
+    <Compile Include="Assets\ToLua\Examples\11_Delegate\TestDelegate.cs" />
+    <Compile Include="Assets\ToLua\Examples\11_Delegate\TestEventListener.cs" />
+    <Compile Include="Assets\ToLua\Examples\11_Delegate\TestEventListenerWrap.cs" />
+    <Compile Include="Assets\ToLua\Examples\12_GameObject\TestGameObject.cs" />
+    <Compile Include="Assets\ToLua\Examples\13_CustomLoader\TestCustomLoader.cs" />
+    <Compile Include="Assets\ToLua\Examples\14_Out\TestOutArg.cs" />
+    <Compile Include="Assets\ToLua\Examples\15_ProtoBuffer\TestProtoBuffer.cs" />
+    <Compile Include="Assets\ToLua\Examples\15_ProtoBuffer\TestProtol.cs" />
+    <Compile Include="Assets\ToLua\Examples\15_ProtoBuffer\TestProtolWrap.cs" />
+    <Compile Include="Assets\ToLua\Examples\16_Int64\TestInt64.cs" />
+    <Compile Include="Assets\ToLua\Examples\17_Inherit\TestInherit.cs" />
+    <Compile Include="Assets\ToLua\Examples\18_Bundle\TestABLoader.cs" />
+    <Compile Include="Assets\ToLua\Examples\19_cjson\TestCJson.cs" />
+    <Compile Include="Assets\ToLua\Examples\20_utf8\TestUTF8.cs" />
+    <Compile Include="Assets\ToLua\Examples\21_String\TestString.cs" />
+    <Compile Include="Assets\ToLua\Examples\22_Reflection\TestReflection.cs" />
+    <Compile Include="Assets\ToLua\Examples\23_List\UseList.cs" />
+    <Compile Include="Assets\ToLua\Examples\24_Struct\PassStruct.cs" />
+    <Compile Include="Assets\ToLua\Examples\Performance\TestPerformance.cs" />
+    <Compile Include="Assets\ToLua\Examples\TestErrorStack\TestInstantiate.cs" />
+    <Compile Include="Assets\ToLua\Examples\TestErrorStack\TestInstantiate2.cs" />
+    <Compile Include="Assets\ToLua\Examples\TestErrorStack\TestLuaStack.cs" />
+    <Compile Include="Assets\ToLua\Examples\TestOverload\TestExportWrap.cs" />
+    <Compile Include="Assets\ToLua\Examples\TestOverload\TestExport_SpaceWrap.cs" />
+    <Compile Include="Assets\ToLua\Examples\TestOverload\TestOverload.cs" />
+    <Compile Include="Assets\ToLua\Misc\LuaClient.cs" />
+    <Compile Include="Assets\ToLua\Misc\LuaCoroutine.cs" />
+    <Compile Include="Assets\ToLua\Misc\LuaLooper.cs" />
+    <Compile Include="Assets\ToLua\Misc\LuaResLoader.cs" />
+    <Compile Include="Assets\ToLua\Reflection\LuaConstructor.cs" />
+    <Compile Include="Assets\ToLua\Reflection\LuaField.cs" />
+    <Compile Include="Assets\ToLua\Reflection\LuaMethod.cs" />
+    <Compile Include="Assets\ToLua\Reflection\LuaProperty.cs" />
+    <Compile Include="Assets\ToLua\Reflection\LuaReflection.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\PlayFlock_Utils\HUDDebug\ReadMe.txt" />
+    <None Include="Assets\Poq Xert\GUIBuilder\Readme.txt" />
+    <None Include="Assets\Resources\BF_record.txt" />
+    <None Include="Assets\Resources\Fight_loadRecord.xml" />
+    <None Include="Assets\Resources\Fight_nameRecord.xml" />
+    <None Include="Assets\Resources\Fight_runtimePrefabRecord.xml" />
+    <None Include="Assets\Resources\Login_loadRecord.xml" />
+    <None Include="Assets\Resources\Login_nameRecord.xml" />
+    <None Include="Assets\Resources\Login_record.txt" />
+    <None Include="Assets\Resources\Match_loadRecord.xml" />
+    <None Include="Assets\Resources\Match_nameRecord.xml" />
+    <None Include="Assets\Resources\Match_record.txt" />
+    <None Include="Assets\Resources\Select_loadRecord.xml" />
+    <None Include="Assets\Resources\Select_nameRecord.xml" />
+    <None Include="Assets\Resources\Select_record.txt" />
+    <None Include="Assets\Resources\behaviac\exported\AttackToPos.xml" />
+    <None Include="Assets\Resources\behaviac\exported\AvoidRisks.xml" />
+    <None Include="Assets\Resources\behaviac\exported\ChaseAndAttack.xml" />
+    <None Include="Assets\Resources\behaviac\exported\Cooperate.xml" />
+    <None Include="Assets\Resources\behaviac\exported\DeathDetect.xml" />
+    <None Include="Assets\Resources\behaviac\exported\DefenseTowerBT.xml" />
+    <None Include="Assets\Resources\behaviac\exported\FightTactics.xml" />
+    <None Include="Assets\Resources\behaviac\exported\HeroBT.xml" />
+    <None Include="Assets\Resources\behaviac\exported\Idle.xml" />
+    <None Include="Assets\Resources\behaviac\exported\LootTreasure.xml" />
+    <None Include="Assets\Resources\behaviac\exported\Quiken.xml" />
+    <None Include="Assets\Resources\behaviac\exported\RunHome.xml" />
+    <None Include="Assets\Resources\behaviac\exported\SoilderBT.xml" />
+    <None Include="Assets\Resources\behaviac\exported\Survive.xml" />
+    <None Include="Assets\Resources\behaviac\exported\TacticsAttack.xml" />
+    <None Include="Assets\Resources\behaviac\exported\TacticsAttackLoop.xml" />
+    <None Include="Assets\Resources\behaviac\exported\TakeAdvantage.xml" />
+    <None Include="Assets\Resources\behaviac\exported\TempRetreat.xml" />
+    <None Include="Assets\Resources\behaviac\exported\meta\MOBA.meta.xml" />
+    <None Include="Assets\Resources\test.xml" />
+    <None Include="Assets\Scripts\behaviac\runtime\license.txt" />
+    <None Include="Assets\Scripts\behaviac\runtime\readme.txt" />
+    <None Include="Assets\Scripts\behaviac\runtime\version.txt" />
+    <None Include="Assets\SimplePeople\Changelog.txt" />
+    <None Include="Assets\StreamingAssets\Windows\Download_record.txt" />
+    <None Include="Assets\StreamingAssets\Windows\Fight_loadRecord.xml" />
+    <None Include="Assets\StreamingAssets\Windows\Fight_record.txt" />
+    <None Include="Assets\StreamingAssets\Windows\Fight_runtimePrefabRecord.xml" />
+    <None Include="Assets\StreamingAssets\Windows\Login_loadRecord.xml" />
+    <None Include="Assets\StreamingAssets\Windows\Login_record.txt" />
+    <None Include="Assets\StreamingAssets\Windows\Match_loadRecord.xml" />
+    <None Include="Assets\StreamingAssets\Windows\Match_record.txt" />
+    <None Include="Assets\StreamingAssets\Windows\Select_loadRecord.xml" />
+    <None Include="Assets\StreamingAssets\Windows\Select_record.txt" />
+    <None Include="Assets\StreamingAssets\Windows\behaviac_record.txt" />
+    <None Include="Assets\ToLua\readme.txt" />
+    <None Include="Assets\link.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+</Project>

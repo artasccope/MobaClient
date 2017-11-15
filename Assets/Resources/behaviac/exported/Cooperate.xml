@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--EXPORTED BY TOOL, DON'T MODIFY IT!-->
+<!--Source File: Cooperate.xml-->
+<behavior name="Cooperate" agenttype="HeroAgent" version="5">
+  <pars>
+    <par name="_$local_task_param_$_0" type="bVector3*" value="null" />
+  </pars>
+  <node class="Task" id="0">
+    <property Prototype="Self.HeroAgent::Cooperate_task(null)" />
+    <property IsHTN="false" />
+    <node class="Sequence" id="1">
+      <node class="Assignment" id="2">
+        <property CastRight="false" />
+        <property Opl="bVector3 Self.SoilderAgent::curTacticAtkPos" />
+        <property Opr="bVector3 Self.HeroAgent::_$local_task_param_$_0" />
+      </node>
+      <node class="ReferencedBehavior" id="3">
+        <property ReferenceBehavior="const string &quot;TacticsAttack&quot;" />
+        <property Task="Self.HeroAgent::TacticsAttack_task(bVector3 Self.HeroAgent::_$local_task_param_$_0)" />
+      </node>
+    </node>
+  </node>
+</behavior>

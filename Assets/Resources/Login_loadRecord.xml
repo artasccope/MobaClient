@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <LoadItem PrefabABPath="login/ui.ld login_bkg.prefab" OrganizeDataABPath="login/organizedata/ui.ld login_bkg.asset" InitialOrder="0" IsActive="true" />
+  <LoadItem PrefabABPath="login/ui.ld loginPanel.prefab" OrganizeDataABPath="login/organizedata/ui.ld loginPanel.asset" InitialOrder="1" IsActive="true" />
+  <LoadItem PrefabABPath="login/ui.ld registerPanel.prefab" OrganizeDataABPath="login/organizedata/ui.ld registerPanel.asset" InitialOrder="2" IsActive="false" />
+  <LoadItem PrefabABPath="login/ui.ld errorPanel.prefab" OrganizeDataABPath="login/organizedata/ui.ld errorPanel.asset" InitialOrder="3" IsActive="false" />
+</root>

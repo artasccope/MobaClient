@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--EXPORTED BY TOOL, DON'T MODIFY IT!-->
+<!--Source File: TacticsAttackLoop.xml-->
+<behavior name="TacticsAttackLoop" agenttype="HeroAgent" version="5">
+  <node class="Sequence" id="0">
+    <attachment class="Event" id="4" flag="event">
+      <property ReferenceFilename="Cooperate" />
+      <property Task="Self.HeroAgent::Cooperate_task(null)" />
+      <property TriggeredOnce="false" />
+      <property TriggerMode="Transfer" />
+    </attachment>
+    <node class="Condition" id="3">
+      <property Operator="Equal" />
+      <property Opl="Self.HeroAgent::TestHasTacticsTargetLeft()" />
+      <property Opr="const bool true" />
+    </node>
+    <node class="Assignment" id="1">
+      <property CastRight="false" />
+      <property Opl="bVector3 Self.SoilderAgent::curTacticAtkPos" />
+      <property Opr="Self.HeroAgent::GetCurReseanableTacticsTarget()" />
+    </node>
+    <node class="ReferencedBehavior" id="2">
+      <property ReferenceBehavior="const string &quot;TacticsAttack&quot;" />
+      <property Task="Self.HeroAgent::TacticsAttack_task(null)" />
+    </node>
+  </node>
+</behavior>

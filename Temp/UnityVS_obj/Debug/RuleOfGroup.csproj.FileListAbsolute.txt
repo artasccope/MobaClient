@@ -1,0 +1,2 @@
+C:\UnityProjects\RuleOfGroup\Temp\UnityVS_obj\Debug\RuleOfGroup.csprojResolveAssemblyReference.cache
+C:\UnityProjects\RuleOfGroup\Temp\UnityVS_obj\Debug\RuleOfGroup.csproj.CoreCompileInputs.cache

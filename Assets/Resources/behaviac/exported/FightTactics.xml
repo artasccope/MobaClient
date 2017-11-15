@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--EXPORTED BY TOOL, DON'T MODIFY IT!-->
+<!--Source File: FightTactics.xml-->
+<behavior name="FightTactics" agenttype="HeroAgent" version="5">
+  <node class="SelectorLoop" id="0">
+    <property ResetChildren="false" />
+    <node class="WithPrecondition" id="1">
+      <node class="Condition" id="3">
+        <property Operator="Equal" />
+        <property Opl="Self.HeroAgent::TestCurSituation()" />
+        <property Opr="const Situation Disadvantage" />
+      </node>
+      <node class="ReferencedBehavior" id="7">
+        <property ReferenceBehavior="const string &quot;AvoidRisks&quot;" />
+      </node>
+    </node>
+    <node class="WithPrecondition" id="2">
+      <node class="Condition" id="4">
+        <property Operator="NotEqual" />
+        <property Opl="Self.HeroAgent::TestCurSituation()" />
+        <property Opr="const Situation Disadvantage" />
+      </node>
+      <node class="ReferencedBehavior" id="12">
+        <property ReferenceBehavior="const string &quot;TakeAdvantage&quot;" />
+      </node>
+    </node>
+  </node>
+</behavior>

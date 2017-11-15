@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--EXPORTED BY TOOL, DON'T MODIFY IT!-->
+<!--Source File: AttackToPos.xml-->
+<behavior name="AttackToPos" agenttype="SoilderAgent" version="5">
+  <pars>
+    <par name="_$local_task_param_$_0" type="bVector3*" value="null" />
+  </pars>
+  <node class="Task" id="0">
+    <property Prototype="Self.SoilderAgent::AttackToPos_task(null)" />
+    <property IsHTN="false" />
+    <node class="IfElse" id="1">
+      <node class="Condition" id="2">
+        <property Operator="Equal" />
+        <property Opl="Self.SoilderAgent::TestHasEnemyInEyeRange()" />
+        <property Opr="const bool true" />
+      </node>
+      <node class="Sequence" id="3">
+        <node class="Assignment" id="7">
+          <property CastRight="false" />
+          <property Opl="FightAgent Self.SoilderAgent::curEnemyTarget" />
+          <property Opr="Self.SoilderAgent::GetNearestEnemy()" />
+        </node>
+        <node class="ReferencedBehavior" id="4">
+          <property ReferenceBehavior="const string &quot;ChaseAndAttack&quot;" />
+          <property Task="Self.SoilderAgent::ChaseAndAttack_task(FightAgent Self.SoilderAgent::curEnemyTarget)" />
+        </node>
+      </node>
+      <node class="Action" id="6">
+        <property Method="Self.SoilderAgent::MoveTo(bVector3 Self.SoilderAgent::_$local_task_param_$_0)" />
+        <property ResultOption="BT_INVALID" />
+      </node>
+    </node>
+  </node>
+</behavior>

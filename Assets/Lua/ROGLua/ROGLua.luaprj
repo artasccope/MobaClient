@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<Project Name="ROGLua.luaprj" Cmd="" Arg="" Dir="" Toggle="false" >
+    <Filter Name="Lua" Directory=".\.." Toggle="false" >
+        <LuaFile RelativePath=".\..\class.lua" />
+        <LuaFile RelativePath=".\..\define.lua" />
+        <LuaFile RelativePath=".\..\LMgrBase.lua" />
+        <LuaFile RelativePath=".\..\LMsgBase.lua" />
+        <LuaFile RelativePath=".\..\LUIMgr.lua" />
+        <LuaFile RelativePath=".\..\Main.lua" />
+        <LuaFile RelativePath=".\..\math.lua" />
+        <LuaFile RelativePath=".\..\relyOn.lua" />
+        <Filter Name="ROGLua" Directory="." Toggle="true" />
+    </Filter>
+</Project>

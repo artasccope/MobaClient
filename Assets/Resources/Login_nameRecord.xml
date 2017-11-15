@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infoRecord>
+  <elementRecord name="Canvaslogin_bkg" />
+  <elementRecord name="CanvasloginPanel" />
+  <elementRecord name="CanvasloginPanelLoginAreaaccountLabel" />
+  <elementRecord name="CanvasloginPanelLoginAreapwdLabel" />
+  <elementRecord name="CanvasloginPanelLoginAreainp_loginAccount" />
+  <elementRecord name="CanvasloginPanelLoginAreainp_loginAccountPlaceholder" />
+  <elementRecord name="CanvasloginPanelLoginAreainp_loginAccountText" />
+  <elementRecord name="CanvasloginPanelLoginAreainp_loginPwd" />
+  <elementRecord name="CanvasloginPanelLoginAreainp_loginPwdPlaceholder" />
+  <elementRecord name="CanvasloginPanelLoginAreainp_loginPwdText" />
+  <elementRecord name="CanvasloginPanelLoginAreabtn_enter" />
+  <elementRecord name="CanvasloginPanelLoginAreabtn_enterText" />
+  <elementRecord name="CanvasloginPanelLoginAreabtn_registerPanel" />
+  <elementRecord name="CanvasloginPanelLoginAreabtn_registerPanelText (1)" />
+  <elementRecord name="CanvasregisterPanel" />
+  <elementRecord name="CanvasregisterPanelImageText" />
+  <elementRecord name="CanvasregisterPanelImageinp_registerPwd" />
+  <elementRecord name="CanvasregisterPanelImageinp_registerPwdPlaceholder" />
+  <elementRecord name="CanvasregisterPanelImageinp_registerPwdText" />
+  <elementRecord name="CanvasregisterPanelImageText" />
+  <elementRecord name="CanvasregisterPanelImageText" />
+  <elementRecord name="CanvasregisterPanelImageinp_registerAccount" />
+  <elementRecord name="CanvasregisterPanelImageinp_registerAccountPlaceholder" />
+  <elementRecord name="CanvasregisterPanelImageinp_registerAccountText" />
+  <elementRecord name="CanvasregisterPanelImageagin" />
+  <elementRecord name="CanvasregisterPanelImageinp_registerPwdAgain" />
+  <elementRecord name="CanvasregisterPanelImageinp_registerPwdAgainPlaceholder" />
+  <elementRecord name="CanvasregisterPanelImageinp_registerPwdAgainText" />
+  <elementRecord name="CanvasregisterPanelImagebtn_register" />
+  <elementRecord name="CanvasregisterPanelImagebtn_registerText" />
+  <elementRecord name="CanvasregisterPanelImagebtn_registerClose" />
+  <elementRecord name="CanvasregisterPanelImagebtn_registerCloseText" />
+  <elementRecord name="CanvaserrorPanel" />
+  <elementRecord name="CanvaserrorPanelshowBoxtxt_errorInfo" />
+  <elementRecord name="CanvaserrorPanelshowBoxbtn_errorEnsure" />
+  <elementRecord name="CanvaserrorPanelshowBoxbtn_errorEnsureText" />
+</infoRecord>

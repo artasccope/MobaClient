@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--EXPORTED BY TOOL, DON'T MODIFY IT!-->
+<!--Source File: TempRetreat.xml-->
+<behavior name="TempRetreat" agenttype="HeroAgent" version="5">
+  <pars>
+    <par name="_$local_task_param_$_0" type="bVector3*" value="null" />
+  </pars>
+  <node class="Task" id="0">
+    <property Prototype="Self.HeroAgent::TempRetreat_task(null)" />
+    <property IsHTN="false" />
+    <node class="SelectorLoop" id="1">
+      <property ResetChildren="false" />
+      <node class="WithPrecondition" id="2">
+        <node class="Condition" id="4">
+          <property Operator="Equal" />
+          <property Opl="Self.HeroAgent::ArrivedRetreatPos()" />
+          <property Opr="const bool true" />
+        </node>
+        <node class="IfElse" id="5">
+          <node class="Condition" id="6">
+            <property Operator="Equal" />
+            <property Opl="Self.HeroAgent::IsEnemyChasing()" />
+            <property Opr="const bool true" />
+          </node>
+          <node class="Sequence" id="7">
+            <node class="Assignment" id="8">
+              <property CastRight="false" />
+              <property Opl="bVector3 Self.SoilderAgent::curTacticAtkPos" />
+              <property Opr="Self.HeroAgent::GetCurReseanableTacticsTarget()" />
+            </node>
+            <node class="End" id="9">
+              <property EndOutside="false" />
+              <property EndStatus="const behaviac::EBTStatus BT_SUCCESS" />
+            </node>
+          </node>
+          <node class="ReferencedBehavior" id="10">
+            <property ReferenceBehavior="const string &quot;AttackToPos&quot;" />
+            <property Task="Self.SoilderAgent::AttackToPos_task(bVector3 Self.HeroAgent::fleePos)" />
+          </node>
+        </node>
+      </node>
+      <node class="WithPrecondition" id="3">
+        <node class="Condition" id="11">
+          <property Operator="Equal" />
+          <property Opl="Self.HeroAgent::ArrivedRetreatPos()" />
+          <property Opr="const bool false" />
+        </node>
+        <node class="IfElse" id="12">
+          <node class="Condition" id="13">
+            <property Operator="Equal" />
+            <property Opl="Self.HeroAgent::IsEnemyChasing()" />
+            <property Opr="const bool true" />
+          </node>
+          <node class="Action" id="14">
+            <property Method="Self.SoilderAgent::MoveTo(bVector3 Self.HeroAgent::_$local_task_param_$_0)" />
+            <property ResultOption="BT_INVALID" />
+          </node>
+          <node class="ReferencedBehavior" id="15">
+            <property ReferenceBehavior="const string &quot;AttackToPos&quot;" />
+            <property Task="Self.SoilderAgent::AttackToPos_task(bVector3 Self.HeroAgent::fleePos)" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+</behavior>

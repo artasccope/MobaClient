@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--EXPORTED BY TOOL, DON'T MODIFY IT!-->
+<agents version="1" signature="2623873306">
+  <agent type="FightAgent" base="behaviac::Agent" signature="2912840436">
+    <properties>
+      <property name="couldAttack" type="bool" member="false" static="false" defaultvalue="false" />
+      <property name="couldMove" type="bool" member="false" static="false" defaultvalue="false" />
+      <property name="isDead" type="bool" member="false" static="false" defaultvalue="false" />
+      <property name="LifeStatus" type="behaviac::EBTStatus" member="false" static="false" defaultvalue="BT_INVALID" />
+      <property name="position" type="bVector3*" member="false" static="false" defaultvalue="null" />
+    </properties>
+  </agent>
+  <agent type="BuildingAgent" base="FightAgent" signature="744566553">
+    <properties>
+      <property name="couldAttack" type="bool" member="false" static="false" defaultvalue="false" />
+      <property name="couldMove" type="bool" member="false" static="false" defaultvalue="false" />
+      <property name="isDead" type="bool" member="false" static="false" defaultvalue="false" />
+      <property name="LifeStatus" type="behaviac::EBTStatus" member="false" static="false" defaultvalue="BT_INVALID" />
+      <property name="position" type="bVector3*" member="false" static="false" defaultvalue="null" />
+    </properties>
+  </agent>
+  <agent type="DefenseTowerAgent" base="BuildingAgent" signature="2978994066">
+    <properties>
+      <property name="couldAttack" type="bool" member="false" static="false" defaultvalue="false" />
+      <property name="couldMove" type="bool" member="false" static="false" defaultvalue="false" />
+      <property name="curTarget" type="FightAgent*" member="false" static="false" defaultvalue="null" />
+      <property name="isDead" type="bool" member="false" static="false" defaultvalue="false" />
+      <property name="LifeStatus" type="behaviac::EBTStatus" member="false" static="false" defaultvalue="BT_INVALID" />
+      <property name="position" type="bVector3*" member="false" static="false" defaultvalue="null" />
+    </properties>
+  </agent>
+  <agent type="SoilderAgent" base="FightAgent" signature="549697942">
+    <properties>
+      <property name="couldAttack" type="bool" member="false" static="false" defaultvalue="false" />
+      <property name="couldMove" type="bool" member="false" static="false" defaultvalue="false" />
+      <property name="curActionStatus" type="ActionStatus" member="false" static="false" defaultvalue="Moving" />
+      <property name="curEnemyTarget" type="FightAgent*" member="false" static="false" defaultvalue="null" />
+      <property name="curSituation" type="Situation" member="false" static="false" defaultvalue="Advantage" />
+      <property name="curTacticAtkPos" type="bVector3*" member="false" static="false" defaultvalue="null" />
+      <property name="homePoint" type="bVector3*" member="false" static="false" defaultvalue="null" />
+      <property name="isDead" type="bool" member="false" static="false" defaultvalue="false" />
+      <property name="LifeStatus" type="behaviac::EBTStatus" member="false" static="false" defaultvalue="BT_INVALID" />
+      <property name="position" type="bVector3*" member="false" static="false" defaultvalue="null" />
+    </properties>
+  </agent>
+  <agent type="HeroAgent" base="SoilderAgent" signature="3064835767">
+    <properties>
+      <property name="couldAttack" type="bool" member="false" static="false" defaultvalue="false" />
+      <property name="couldMove" type="bool" member="false" static="false" defaultvalue="false" />
+      <property name="curActionStatus" type="ActionStatus" member="false" static="false" defaultvalue="Moving" />
+      <property name="curEnemyTarget" type="FightAgent*" member="false" static="false" defaultvalue="null" />
+      <property name="curSituation" type="Situation" member="false" static="false" defaultvalue="Advantage" />
+      <property name="curTacticAtkPos" type="bVector3*" member="false" static="false" defaultvalue="null" />
+      <property name="fleePos" type="bVector3*" member="false" static="false" defaultvalue="null" />
+      <property name="homePoint" type="bVector3*" member="false" static="false" defaultvalue="null" />
+      <property name="isDead" type="bool" member="false" static="false" defaultvalue="false" />
+      <property name="LifeStatus" type="behaviac::EBTStatus" member="false" static="false" defaultvalue="BT_INVALID" />
+      <property name="position" type="bVector3*" member="false" static="false" defaultvalue="null" />
+      <property name="retreatPos" type="bVector3*" member="false" static="false" defaultvalue="null" />
+    </properties>
+  </agent>
+</agents>

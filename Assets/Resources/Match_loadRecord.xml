@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <LoadItem PrefabABPath="match/ui.ld infoPanel.prefab" OrganizeDataABPath="match/organizedata/ui.ld infoPanel.asset" InitialOrder="0" IsActive="true" />
+  <LoadItem PrefabABPath="match/ui.ld createUserPanel.prefab" OrganizeDataABPath="match/organizedata/ui.ld createUserPanel.asset" InitialOrder="1" IsActive="false" />
+  <LoadItem PrefabABPath="match/ui.ld mask.prefab" OrganizeDataABPath="match/organizedata/ui.ld mask.asset" InitialOrder="2" IsActive="false" />
+  <LoadItem PrefabABPath="match/ui.ld errorPanel.prefab" OrganizeDataABPath="match/organizedata/ui.ld errorPanel.asset" InitialOrder="3" IsActive="false" />
+</root>

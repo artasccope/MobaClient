@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <LoadItem PrefabABPath="select/ui.ld bkg.prefab" OrganizeDataABPath="select/organizedata/ui.ld bkg.asset" InitialOrder="0" IsActive="true" />
+  <LoadItem PrefabABPath="select/ui.ld ChatlFrame.prefab" OrganizeDataABPath="select/organizedata/ui.ld ChatlFrame.asset" InitialOrder="1" IsActive="true" />
+  <LoadItem PrefabABPath="select/ui.ld DetailFrame.prefab" OrganizeDataABPath="select/organizedata/ui.ld DetailFrame.asset" InitialOrder="2" IsActive="true" />
+  <LoadItem PrefabABPath="select/ui.ld LeftList.prefab" OrganizeDataABPath="select/organizedata/ui.ld LeftList.asset" InitialOrder="3" IsActive="true" />
+  <LoadItem PrefabABPath="select/ui.ld RightList.prefab" OrganizeDataABPath="select/organizedata/ui.ld RightList.asset" InitialOrder="4" IsActive="true" />
+  <LoadItem PrefabABPath="select/ui.ld MapFrame.prefab" OrganizeDataABPath="select/organizedata/ui.ld MapFrame.asset" InitialOrder="5" IsActive="true" />
+  <LoadItem PrefabABPath="select/ui.ld Timer.prefab" OrganizeDataABPath="select/organizedata/ui.ld Timer.asset" InitialOrder="6" IsActive="true" />
+  <LoadItem PrefabABPath="select/ui.ld SelectHerosPanel.prefab" OrganizeDataABPath="select/organizedata/ui.ld SelectHerosPanel.asset" InitialOrder="7" IsActive="true" />
+  <LoadItem PrefabABPath="select/ui.ld initialMask.prefab" OrganizeDataABPath="select/organizedata/ui.ld initialMask.asset" InitialOrder="8" IsActive="false" />
+  <LoadItem PrefabABPath="select/ui.ld errorPanel.prefab" OrganizeDataABPath="select/organizedata/ui.ld errorPanel.asset" InitialOrder="9" IsActive="false" />
+</root>

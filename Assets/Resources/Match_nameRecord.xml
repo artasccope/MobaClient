@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<infoRecord>
+  <elementRecord name="MATCH_UIinfoPanel" />
+  <elementRecord name="MATCH_UIinfoPanelmatchHintPaneltxt_matchHint" />
+  <elementRecord name="MATCH_UIinfoPanelbtn_match" />
+  <elementRecord name="MATCH_UIinfoPanelbtn_matchtxt_matchBtn" />
+  <elementRecord name="MATCH_UIinfoPanelPlayerInfoBuddyButton" />
+  <elementRecord name="MATCH_UIinfoPanelPlayerInfoExpHUD" />
+  <elementRecord name="MATCH_UIinfoPanelPlayerInfoExpHUDtxt_playerName" />
+  <elementRecord name="MATCH_UIinfoPanelPlayerInfotxt_level" />
+  <elementRecord name="MATCH_UIinfoPanelSettingButton" />
+  <elementRecord name="MATCH_UIcreateUserPanel" />
+  <elementRecord name="MATCH_UIcreateUserPanelText" />
+  <elementRecord name="MATCH_UIcreateUserPanelinp_name" />
+  <elementRecord name="MATCH_UIcreateUserPanelinp_namePlaceholder" />
+  <elementRecord name="MATCH_UIcreateUserPanelinp_nameText" />
+  <elementRecord name="MATCH_UIcreateUserPanelbtn_create" />
+  <elementRecord name="MATCH_UIcreateUserPanelbtn_createText" />
+  <elementRecord name="MATCH_UImask" />
+  <elementRecord name="MATCH_UImaskText" />
+  <elementRecord name="MATCH_UIerrorPanel" />
+  <elementRecord name="MATCH_UIerrorPanelshowBoxtxt_errorInfo" />
+  <elementRecord name="MATCH_UIerrorPanelshowBoxbtn_errorEnsure" />
+  <elementRecord name="MATCH_UIerrorPanelshowBoxbtn_errorEnsureText" />
+</infoRecord>

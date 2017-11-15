@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--EXPORTED BY TOOL, DON'T MODIFY IT!-->
+<!--Source File: SoilderBT.xml-->
+<behavior name="SoilderBT" agenttype="SoilderAgent" version="5">
+  <node class="Parallel" id="0">
+    <property ChildFinishPolicy="CHILDFINISH_LOOP" />
+    <property ExitPolicy="EXIT_ABORT_RUNNINGSIBLINGS" />
+    <property FailurePolicy="FAIL_ON_ONE" />
+    <property SuccessPolicy="SUCCEED_ON_ALL" />
+    <node class="ReferencedBehavior" id="1">
+      <property ReferenceBehavior="const string &quot;DeathDetect&quot;" />
+    </node>
+    <node class="IfElse" id="2">
+      <node class="Condition" id="3">
+        <property Operator="Equal" />
+        <property Opl="Self.SoilderAgent::TestHasAtkToPosCommand()" />
+        <property Opr="const bool true" />
+      </node>
+      <node class="ReferencedBehavior" id="5">
+        <property ReferenceBehavior="const string &quot;AttackToPos&quot;" />
+        <property Task="Self.SoilderAgent::AttackToPos_task(bVector3 Self.SoilderAgent::curTacticAtkPos)" />
+      </node>
+      <node class="ReferencedBehavior" id="4">
+        <property ReferenceBehavior="const string &quot;Idle&quot;" />
+      </node>
+    </node>
+  </node>
+</behavior>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--EXPORTED BY TOOL, DON'T MODIFY IT!-->
+<!--Source File: AvoidRisks.xml-->
+<behavior name="AvoidRisks" agenttype="HeroAgent" version="5">
+  <node class="SelectorLoop" id="0">
+    <property ResetChildren="false" />
+    <node class="WithPrecondition" id="1">
+      <node class="And" id="2">
+        <node class="Condition" id="4">
+          <property Operator="Greater" />
+          <property Opl="Self.HeroAgent::GetEnemyCountInRange()" />
+          <property Opr="Self.HeroAgent::GetFriendCountInRange()" />
+        </node>
+        <node class="Condition" id="5">
+          <property Operator="Greater" />
+          <property Opl="Self.HeroAgent::GetEnemyHeroCountInRange()" />
+          <property Opr="Self.HeroAgent::GetFirendHeroCountInRange()" />
+        </node>
+      </node>
+      <node class="Sequence" id="3">
+        <node class="Assignment" id="6">
+          <property CastRight="false" />
+          <property Opl="bVector3 Self.HeroAgent::fleePos" />
+          <property Opr="bVector3 Self.FightAgent::position" />
+        </node>
+        <node class="ReferencedBehavior" id="7">
+          <property ReferenceBehavior="const string &quot;TempRetreat&quot;" />
+          <property Task="Self.HeroAgent::TempRetreat_task(bVector3 Self.HeroAgent::retreatPos)" />
+        </node>
+      </node>
+    </node>
+  </node>
+</behavior>

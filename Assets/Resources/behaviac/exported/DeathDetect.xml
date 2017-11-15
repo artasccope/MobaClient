@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--EXPORTED BY TOOL, DON'T MODIFY IT!-->
+<!--Source File: DeathDetect.xml-->
+<behavior name="DeathDetect" agenttype="FightAgent" version="5">
+  <node class="Sequence" id="0">
+    <node class="Condition" id="1">
+      <property Operator="Equal" />
+      <property Opl="Self.FightAgent::IsDead()" />
+      <property Opr="const bool true" />
+    </node>
+    <node class="Action" id="3">
+      <property Method="Self.FightAgent::PlayDead()" />
+      <property ResultOption="BT_SUCCESS" />
+    </node>
+    <node class="Assignment" id="4">
+      <property CastRight="false" />
+      <property Opl="behaviac::EBTStatus Self.FightAgent::LifeStatus" />
+      <property Opr="const behaviac::EBTStatus BT_FAILURE" />
+    </node>
+    <node class="End" id="2">
+      <property EndOutside="true" />
+      <property EndStatus="behaviac::EBTStatus Self.FightAgent::LifeStatus" />
+    </node>
+  </node>
+</behavior>

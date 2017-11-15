@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <RuntimeLoadItem CategoryId="1" SpecieId="1" PrefabABPath="fight/building.ld defenseTower.prefab" ActiveSelf="true" />
+  <RuntimeLoadItem CategoryId="1" SpecieId="3" PrefabABPath="fight/building.ld headQuarter.prefab" ActiveSelf="true" />
+  <RuntimeLoadItem CategoryId="1" SpecieId="4" PrefabABPath="fight/building.ld barracks.prefab" ActiveSelf="true" />
+  <RuntimeLoadItem CategoryId="1" SpecieId="2" PrefabABPath="fight/building.ld advancedDFTower.prefab" ActiveSelf="true" />
+  <RuntimeLoadItem CategoryId="2" SpecieId="1" PrefabABPath="fight/npc/hero.ld 1.prefab" ActiveSelf="true" />
+  <RuntimeLoadItem CategoryId="2" SpecieId="2" PrefabABPath="fight/npc/hero.ld 2.prefab" ActiveSelf="true" />
+  <RuntimeLoadItem CategoryId="2" SpecieId="3" PrefabABPath="fight/npc/hero.ld 3.prefab" ActiveSelf="true" />
+  <RuntimeLoadItem CategoryId="2" SpecieId="4" PrefabABPath="fight/npc/hero.ld 4.prefab" ActiveSelf="true" />
+  <RuntimeLoadItem CategoryId="2" SpecieId="5" PrefabABPath="fight/npc/hero.ld 5.prefab" ActiveSelf="true" />
+  <RuntimeLoadItem CategoryId="2" SpecieId="6" PrefabABPath="fight/npc/hero.ld 6.prefab" ActiveSelf="true" />
+  <RuntimeLoadItem CategoryId="2" SpecieId="7" PrefabABPath="fight/npc/hero.ld 7.prefab" ActiveSelf="true" />
+  <RuntimeLoadItem CategoryId="2" SpecieId="8" PrefabABPath="fight/npc/hero.ld 8.prefab" ActiveSelf="true" />
+  <RuntimeLoadItem CategoryId="2" SpecieId="9" PrefabABPath="fight/npc/hero.ld 9.prefab" ActiveSelf="true" />
+  <RuntimeLoadItem CategoryId="2" SpecieId="10" PrefabABPath="fight/npc/hero.ld 10.prefab" ActiveSelf="true" />
+  <RuntimeLoadItem CategoryId="3" SpecieId="1" PrefabABPath="fight/npc/soilder.ld soilderA.prefab" ActiveSelf="true" />
+  <RuntimeLoadItem CategoryId="3" SpecieId="2" PrefabABPath="fight/npc/soilder.ld soilderB.prefab" ActiveSelf="true" />
+</root>
